@@ -5,9 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/stylesheet.css"> <!-- Stylesheet -->
+
+    <!-- Color Contrast -->
+    <style>
+        /* Improved color contrast */
+        .blue-top-rectangle header h1,
+        .blue-top-rectangle header p {
+            color: #fff; /* White text color */
+        }
+
+        .light-gray-rectangle nav a {
+            color: #333; /* Dark gray text color */
+        }
+
+        .container .sidebar section h2,
+        .container .sidebar section p {
+            color: #333; /* Dark gray text color */
+        }
+
+        .container .content .content-text p,
+        .container .content .content-text blockquote {
+            color: #333; /* Dark gray text color */
+        }
+
+        .container .content .content-text h2 {
+            color: #2f9fbd; /* Blue text color */
+        }
+
+        .blockquote-caption {
+            color: #2f9fbd; /* Blue text color */
+        }
+    </style>
+
+    <!-- Keyboard Accessibility -->
+    <style>
+        /* Ensure keyboard accessibility */
+        nav a,
+        .content-text a {
+            outline: none;
+        }
+
+        nav a:focus,
+        .content-text a:focus {
+            box-shadow: 0 0 3px 2px #2f9fbd; /* Add focus indicator */
+        }
+    </style>
+
+    <!-- Responsive Design -->
+    <style>
+        @media only screen and (max-width: 768px) {
+            /* Adjust padding for smaller screens */
+            .content-text {
+                padding-left: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<!-- Blue top rectangle with header -->
+    <!-- Blue top rectangle with header -->
     <div class="blue-top-rectangle">
         <header>
             <h1>KITTIES TO GO!</h1> <!-- Big text header -->
@@ -33,7 +88,8 @@
                 <p>Chew iPad power cord why must they do that, grab pompom in mouth and put in water dish.</p>
                 <a href="#">Find out more</a>
             </section>
-			<section>
+            <section>
+                <h2>CAT OF THE WEEK</h2>
                 <p>Chew iPad power cord why must they do that, grab pompom in mouth and put in water dish.</p>
                 <a href="#">Find out more</a>
             </section>
@@ -46,29 +102,23 @@
         </aside>
         <div class="content">
               <!-- Main Content -->
-			<style>
-				.content-text {
-					padding-left: 20px; /* Adjust the padding as needed for the desired indentation */
-				}
-			</style>
+            <div class="content-text">
+                <p>Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head.
+                Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head. Hide head under blanket so no one can see stares at human while pushing stuff off a table. Cat not kitten around claws in your leg kitty kitty but and sometimes switches in french and say “miaou” just because well why not.</p>
 
-			<div class="content-text">
-				<p>Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head.
-				Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head. Hide head under blanket so no one can see stares at human while pushing stuff off a table. Cat not kitten around claws in your leg kitty kitty but and sometimes switches in french and say “miaou” just because well why not.</p>
+                <blockquote>"Please stop looking at your phone an pet me. Lounge in the doorway eat and then sleep on your face meowwww meowwww – Jeremy "</blockquote>
 
-				<blockquote>"Please stop looking at your phone an pet me. Lounge in the doorway eat and then sleep on your face meowwww meowwww – Jeremy "</blockquote>
+                <h2>THE KITTIES TO GO STORY</h2>
+                <p>Fall asleep on the washing machine snuggles up to shoulders or knees and purrs you to sleep. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what’s your problem? i meant to do that now i shall wash myself intently cough and swat at dog.</p>
 
-				<h2>THE KITTIES TO GO STORY</h2>
-				<p>Fall asleep on the washing machine snuggles up to shoulders or knees and purrs you to sleep. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what’s your problem? i meant to do that now i shall wash myself intently cough and swat at dog.</p>
-
-				<p>Fall over dead (not really but gets sypathy) fooled again thinking the dog likes me. Jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed hiss at vacuum cleaner and always hungry for lie on your belly and purr when you are asleep stretch.</p>
-			</div>
+                <p>Fall over dead (not really but gets sypathy) fooled again thinking the dog likes me. Jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed hiss at vacuum cleaner and always hungry for lie on your belly and purr when you are asleep stretch.</p>
+            </div>
             <h2 style="color: #2f9fbd; font-weight: bold;">Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head.</h2>
             <p>Cat ipsum dolor sit amet, find something else more interesting, so catty ipsum mesmerizing birds sleep on my human’s head. <span style="color: #2f9fbd;">Hide head under blanket</span> so no one can see stares at human while pushing stuff off a table. Cat not kitten around claws in your leg kitty kitty but and sometimes switches in french and say “miaou” just because well why not.</p>
             
             <blockquote style="color: #2f9fbd; font-size: 1.2em;">"Please stop looking at your phone an pet me. Lounge in the doorway eat and then sleep on your face meowwww meowwww
-			– <i>Jeremy</i>
-			"</blockquote>
+            – <i>Jeremy</i>
+            "</blockquote>
             
             <h2>THE KITTIES TO GO STORY</h2>
             <div class="block-description">
@@ -79,7 +129,7 @@
             </div>
         </div>
     </div>
-	
+    
   <!-- Bottom section -->
     <div class="bottom-section">
         <div class="dark-gray-rectangle">
@@ -92,9 +142,7 @@
             <a href="#">Footer Link 3</a>
             <a href="#">Footer Link 4</a>
         </div>
-		<p class="copyright">©️2018 Kitties To Go!, LLC | Seattle, WA.</p> <!-- Copyright text -->
+        <p class="copyright">©️2018 Kitties To Go!, LLC | Seattle, WA.</p> <!-- Copyright text -->
     </div>
-</body>
-</html>
 </body>
 </html>
